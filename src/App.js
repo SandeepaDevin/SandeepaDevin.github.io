@@ -1,5 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import TopBar from './TopBar';
+import Brief from './Brief';
+import Experience from './Experience';
+import Education from './Education';
+import SelfProjects from './SelfProjects';
+import BottomBar from './BottomBar';
 
 // TopBar component
 function TopBar(props) {
