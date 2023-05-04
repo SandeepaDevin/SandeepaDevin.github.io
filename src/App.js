@@ -1,25 +1,58 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+// TopBar component
+function TopBar(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="topbar">
+      <button onClick={() => props.onButtonClick('brief')}>Brief</button>
+      <button onClick={() => props.onButtonClick('experience')}>Experience</button>
+      <button onClick={() => props.onButtonClick('education')}>Education</button>
+      <button onClick={() => props.onButtonClick('self-projects')}>Self-Projects</button>
     </div>
   );
 }
 
-export default App;
+// BottomBar component
+function BottomBar(props) {
+  return (
+    <div className="bottombar">
+      <input type="text" value={props.value} onChange={props.onChange} />
+    </div>
+  );
+}
+
+// App component
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedButton: 'brief',
+      textValue: ''
+    };
+  }
+
+  handleButtonClick = (buttonName) => {
+    this.setState({ selectedButton: buttonName });
+  }
+
+  handleTextChange = (event) => {
+    this.setState({ textValue: event.target.value });
+  }
+
+  render() {
+    return (
+      <div>
+        <TopBar onButtonClick={this.handleButtonClick} />
+        <div className="content">
+          {this.state.selectedButton === 'brief' && <Brief />}
+          {this.state.selectedButton === 'experience' && <Experience />}
+          {this.state.selectedButton === 'education' && <Education />}
+          {this.state.selectedButton === 'self-projects' && <SelfProjects />}
+        </div>
+        <BottomBar value={this.state.textValue} onChange={this.handleTextChange} />
+      </div>
+    );
+  }
+}
+
