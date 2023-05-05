@@ -1,12 +1,19 @@
 import React from 'react';
 
-function Brief(props) {
+const Brief = () => {
   return (
-    <div>
-      <h1>Brief</h1>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'Right',
+        alignItems: 'Right',
+        height: '100vh'
+      }}
+    >
+      <h1>Home</h1>
       <p>Some brief information here...</p>
     </div>
   );
-}
-
+};
+  
 export default Brief;
