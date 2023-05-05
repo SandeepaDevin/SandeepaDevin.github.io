@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Brief = () => {
+const Home = () => {
   return (
     <div
     style={{
@@ -20,4 +20,4 @@ const Brief = () => {
   );
 };
   
-export default Brief;
+export default Home;
