@@ -13,16 +13,14 @@ const Education = () => {
     }}
     >
       <div>
-      <h1> Education</h1>
-        <h2> Bachelor of Science (hons) in Electronic and Telecommunication Engineering</h2>
-          <h3> Second Class</h3>
-            <p>
-              DSRC and WIFI technologies are two standards used in different vehicles to communicate within each other. 
-              Our goal was to enable communication between these two technologies. in the simulation stage, using Veins 
-              and Veins-Inet we used a DSRC roadside unit to convert WIFI packets to DSRC and vice-versa. 
-              The purpose was to conduct the experiment and compare with the other vehicle communication technologies based on 
-              travel time and payload volume, to understand whether a vehicle driver would have enough time to react.
-            </p>
+      <h2> Education</h2>
+        <h3> Bachelor of Science (hons) in Electronic and Telecommunication Engineering</h3>
+          <h4> University of Moratuwa </h4>
+          <h5> Second Class</h5>
+            <br></br>
+        <h3> Advanced Level Examination - 2015 </h3>
+          <h4> D.S.Senanayake College, Colombo</h4>
+          <h5> Obtained 3A's for Combined mathematics, Physics and Chemistry</h5>
       </div>
     </div>
   );
