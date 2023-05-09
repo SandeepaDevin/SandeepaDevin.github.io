@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #788296;
+  background-color: #ff6900;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,12 +38,12 @@
 }
 
 .footer {
-  background-color: #331af0;
-  border-top:1px solid #331af0;
+  background-color: #ff6900;
+  border-top:1px solid #ff6900;
   position: relative;
   width: 100%;
   bottom: 0;
   color: black;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
 }
