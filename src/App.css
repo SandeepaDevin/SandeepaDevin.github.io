@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.footer {
+  background-color: #331af0;
+  border-top:1px solid #331af0;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  color: black;
+  font-size: 10px;
+  text-align: center;
+}
